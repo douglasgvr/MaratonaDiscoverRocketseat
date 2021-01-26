@@ -1,3 +1,5 @@
+/* GLOBAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,3 +10,25 @@ body {
     background: #f0f2f5;
     font-family: 'Poppins', sans-serif;
 }
+
+.container {
+    width: 300px;
+    
+    margin: auto;
+}
+
+/* HEADER */
+
+header {
+    background: #2d4a22;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#logo {
+    color: #fff;
+    font-weight: 100;
+}
+
+/* BALANCE */
+
