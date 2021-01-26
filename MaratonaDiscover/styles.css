@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-    width: 300px;
+    width: min(90vw);
     
     margin: auto;
 }
@@ -31,4 +31,11 @@ header {
 }
 
 /* BALANCE */
+
+
+/* FOOTER */
+
+footer {
+    margin: 0 auto;
+}
 
