@@ -1,4 +1,4 @@
-/* GLOBAL */
+/* GLOBAL ==============================*/
 :root {
     --dark-blue:#363f5f;
 }
@@ -7,6 +7,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%; /* 15px */
 }
 
 body {
@@ -31,7 +35,7 @@ body {
     margin: auto;
 }
 
-/* TITLES */
+/* TITLES ==============================*/
 
 h2 {
     margin-top: 3.2rem;
@@ -41,7 +45,7 @@ h2 {
     font-weight: normal;
 }
 
-/* LINKS E BUTTONS */
+/* LINKS E BUTTONS ==============================*/
 
 a {
     color: #49aa26;
@@ -57,7 +61,7 @@ a:hover {
     margin-bottom: .8rem;
 }
 
-/* HEADER */
+/* HEADER ==============================*/
 
 header {
     background: #2d4a22;
@@ -70,7 +74,7 @@ header {
     font-weight: 100;
 }
 
-/* BALANCE */
+/* BALANCE ==============================*/
 
 #balance {
     margin-top: -8rem;
@@ -81,7 +85,7 @@ header {
     margin-top: 0;
 }
 
-/* CARDS */
+/* CARDS ==============================*/
 
 .card {
     background: #fff;
@@ -114,11 +118,18 @@ header {
     color: #fff;
 }
 
-/* TABLE */
+/* TABLE ==============================*/
+
+#transaction {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+
+}
+
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-
     color: #969cb3;
 }
 
@@ -170,7 +181,53 @@ td.expense {
     color: #e92929;
 }
 
-/* FOOTER */
+/* MODAL ==============================*/
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal {
+    background: #f0f2f5;
+    padding: 2.4rem;
+    /* position: relative; */
+}
+
+/* FORM ==============================*/
+
+#form {
+    max-width: 500px;
+}
+
+#form h2 {
+    margin-top: 0;
+}
+
+#form form input {
+    border: none;
+    border-radius: 0.2rem;
+    
+}
+
+/* FOOTER ==============================*/
 
 footer {
     text-align: center;
@@ -179,5 +236,20 @@ footer {
     color: var(--dark-blue);
 
     opacity: 0.6;
+}
+
+/* RESPONSVE ==============================*/
+
+@media(min-width: 800px) {
+
+    html{
+        font-size: 87.5%;
+    }
+
+    #balance {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
 }
 
